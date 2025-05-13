@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Microjuego</title>
+		<link rel="stylesheet" href="estilo.css" />
+	</head>
+	<body>
+	<header>
+	<script src="microjuego.js"></script>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="CV.html">CV</a></li>
+			<li><a href="hobbies.html">Hobbies</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="microjuego.HTML">Microjuego</a></li>
+		</ul>
+	</nav>
+	</header>
+		<main>
+		<h1>Andualem Cendoya</h1>
+		
+		<article>
+		<h2>Bienvenido al juego</h2>
+		<p>Debes adiviniar un numero entre 1 y 100. Tienes 10 intentos, los errores de rango no cuentan.</p>
+		</article>
+		
+		<form>
+		<p><label for ="field-number">Tu numero: </label><input type="number" name="numero" id="field-number"/></p>
+		
+			<progress id="progreso" max="10" value="0"></progress>
+
+		<label for="field-submit"></label><input type="submit" name="submit" id="field-submit" value="Adivina" onclick="compara_numero(event);"/>
+
+
+		</form>
+		<p id="resultado"></p>
+		
+		
+
+		</main>
+	
+	<footer>
+		<p>&copy; Andualem 2025</p>
+	</footer>
+	</body>
+</html>
